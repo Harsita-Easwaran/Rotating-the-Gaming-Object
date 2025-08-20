@@ -1,37 +1,32 @@
-## Rotating-the-Gaming-Object
+# Rotating the Gaming Object
 
-## Aim:
-To develop a 3D application for rotating the gaming objects in unity.
+## Aim
+To develop a 3D application for rotating the gaming objects in Unity.
 
-## Algorithm:
-## Step1:
-Start
+## Algorithm
 
-## Start2:
-Click File -> Scene -> Select the scene -> Save as-> New folder(Scenes)-> File name (Expno1)
+**Step 1:** Start  
 
-## Start3:
-Click Hierarchy -> 3DObject -> Cylinder Hierarchy -> 3DObject -> Capsule Hierarchy -> 3DObject -> Text Hierarchy -> Effects -> Particle system
+**Step 2:** Click File → Scene → Select the scene → Save as → New folder (Scenes) → File name (Expno1)  
 
-## Start4:
-Create a folder in project and name as Materials Material folder -> Create -> Material (Name: Cylinder) Inspector ->Surface Inputs ->BaseMAp (Choose the color) Drag the Cylinder to the plane and release the mouse
+**Step 3:** Click Hierarchy → 3DObject → Cylinder, Hierarchy → 3DObject → Capsule, Hierarchy → 3DObject → Text, Hierarchy → 
+Effects → Particle system  
 
-Create a folder in project and name as Materials Material folder -> Create -> Material (Name: Capsule) Inspector ->Surface Inputs ->BaseMAp (Choose the color) Drag the Capsule to the plane and release the mouse
+**Step 4:** Create a folder in Project and name it `Materials`.  
+- `Materials` folder → Create → Material (Name: Cylinder) → Inspector → Surface Inputs → BaseMap (Choose color) → Drag the Cylinder to the plane.  
+- `Materials` folder → Create → Material (Name: Capsule) → Inspector → Surface Inputs → BaseMap (Choose color) → Drag the Capsule to the plane.  
 
-## Start5:
-Click Hierarchy -> DirectionalLight Inspector -> Change the color to white (255,255,255)
+**Step 5:** Click Hierarchy → Directional Light → Inspector → Change the color to white (255, 255, 255).  
 
-## Start6:
-Create a folder name Coding and create a C# file to add the coding in it.
+**Step 6:** Create a folder named `Coding` and add a C# file to it.  
 
-## Start7:
-To add our C# Script file to our selected object, click on the C# Script file and drag it to our selected objects in the Hierarchy window nad run the application.
+**Step 7:** To add our C# Script file to our selected object, drag the script to the objects in the Hierarchy window and run the application.  
 
-## Start8:
-Stop
+**Step 8:** Stop  
 
-## Program:
-'''
+## Program
+
+```csharp
 using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
@@ -45,13 +40,17 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(Vector3.left,Vector3.up,40*Time.deltaTime);
-
+        transform.RotateAround(Vector3.left, Vector3.up, 40 * Time.deltaTime);
     }
 }
-'''
-## Output:
-![Output Screenshot](Assets/Screenshot-2025-08-19-091822.png)
 
-## Result:
-Hence the 3D application for rotating the gaming objects in unity is developed.
+```
+## Output
+
+Assets/Screenshot 2025-08-19 091822.png
+
+## Result
+
+Hence, the 3D application for rotating the gaming objects in Unity is developed.
+
+
